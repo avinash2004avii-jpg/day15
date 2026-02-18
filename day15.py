@@ -48,6 +48,20 @@ picking_2st_marble = (red-1)/(red+blue-1)
 prob = picking_1st_marble * picking_2st_marble
 print(f'probability that both are Red without Replacement : {prob:.2f}')
 
+#TASK--3 THE BAYESIAN FILTER
+spam = 0.1
+free_spam = 0.9
+ham = 0.9
+free_ham = 0.05
+
+spams = spam * free_spam
+hams = ham * free_ham
+free = (spams) + (hams)
+print(f'P(free) : {free}')
+
+spam_free = (free_spam * spam) / free
+print(f'email with the word "Free", probability it is actually Spam : {spam_free:.2f}')
+
       
 
 
